@@ -33,4 +33,6 @@ func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
 	if len(deck) != len(loadedDeck) {
 		t.Error("Expected to have the same length from both decks.")
 	}
+
+	os.Remove(filename)
 }
